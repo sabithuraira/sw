@@ -35,8 +35,9 @@ default: &default
 development:
  <<: *default
 
-#test:
-# <<: *default
+test:
+ adapter: postgresql
+ database: stockwatcher_test
 
 production:
  <<: *default
