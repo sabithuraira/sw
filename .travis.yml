@@ -10,3 +10,6 @@ services:
 before_script:
   - cp config/database.yml.travis config/database.yml
   - psql -c 'create database stockwatcher_test;' -U postgres
+
+addons:
+  postgresql: "9.6"
