@@ -12,4 +12,11 @@
  *
  *= require_tree .
  *= require_self
+ *= require plugins/bootstrap/css/bootstrap
+ *= require plugins/node-waves/waves
+ *= require plugins/animate-css/animate
+ *= require plugins/morrisjs/morris
+ *= require css/style
+ *= require css/themes/all-themes
+
  */

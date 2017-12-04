@@ -10,7 +10,6 @@ default: &default
  database: stockwatcher
  host: localhost
  pool: 5
- username: postgres
 #  pool: 5
 #  timeout: 5000
 
@@ -33,6 +32,7 @@ default: &default
 
 development:
  <<: *default
+ username: postgres
  password: postgres
 
 test:
@@ -40,4 +40,5 @@ test:
 
 production:
  <<: *default
+ username: postgres
  password: postgres
